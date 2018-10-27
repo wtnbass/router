@@ -1,0 +1,14 @@
+{
+  "name": "examples",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@wtnbass/slot-router": "file:..",
+    "express": "4.16.4",
+    "pwa-helpers": "0.9.0"
+  }
+}
