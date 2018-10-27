@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Example</title>
+  </head>
+  <body>
+    <header>
+      <ul>
+        <li><router-link to="/">Home</router-link></li>
+        <li><router-link to="/about">About</router-link></li>
+        <li><router-link to="/contact">Contact</router-link></li>
+        <li><router-link to="/users/Alice">Alice</router-link></li>
+        <li><router-link to="/users/Bob">Bob</router-link></li>
+      </ul>
+    </header>
+    <hr />
+    <main>
+      <router-route>
+        <example-home path="/"></example-home>
+        <example-about path="/about">
+          <example-about-home path="/"></example-about-home>
+          <example-about-1 path="/1"></example-about-1>
+          <example-about-2 path="/2"></example-about-2>
+          <example-about-fallback path="/*"></example-about-fallback>
+        </example-about>
+        <example-contact path="/contact"></example-contact>
+        <example-user path="/users/:userId"></example-user>
+        <example-404 not-found></example-404>
+      </router-route>
+    </main>
+
+    <script type="module" src="/node_modules/@wtnbass/router/lib/router.esm.js"></script>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
