@@ -1,19 +1,18 @@
 {
-  "name": "@wtnbass/slot-router",
+  "name": "slot-router",
   "version": "0.1.0",
   "description": "web components router using slot",
-  "main": "slot-router.cjs.js",
-  "module": "slot-router.esm.js",
+  "main": "slot-router.js",
+  "module": "slot-router.js",
   "files": [
-    "slot-router.cjs.js",
-    "slot-router.esm.js",
+    "slot-router.js",
     "slot-router.d.ts"
   ],
   "scripts": {
     "build": "rollup -c",
     "lint": "tslint -p .",
     "fmt": "prettier --write 'src/**/*.ts'",
-    "clean": "rm -fr *.d.ts slot-router.*.js"
+    "clean": "rm -fr ./slot-router.* ./lib"
   },
   "devDependencies": {
     "prettier": "1.14.3",
@@ -29,8 +28,5 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/wtnbass/slot-router.git"
-  },
-  "publishConfig": {
-    "access": "public"
   }
 }

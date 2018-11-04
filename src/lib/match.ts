@@ -28,7 +28,7 @@ const areParamsEqual = areEqual(r => paramRegexp.test(r));
 
 const areAnyEqual = areEqual(r => r === "*");
 
-export function resolve(
+export function match(
   pathname: string,
   parentNode: Element,
   routeNode: NodeListOf<Element>,
