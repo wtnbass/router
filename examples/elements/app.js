@@ -1,4 +1,4 @@
-import { navigate } from "../node_modules/@wtnbass/slot-router/slot-router.esm.js";
+import { navigate } from "../node_modules/slot-router/slot-router.js";
 import { installRouter } from "../node_modules/pwa-helpers/router.js";
 
 import "./auth-router.js";
@@ -55,9 +55,10 @@ class App extends HTMLElement {
       import("./home.js");
     } else if (seg[0] === "about") {
       import("./about.js");
+      import("./about-home.js");
       if (seg[1] === "1") {
         import("./about-1.js");
-      } else if (seg[1] === "1") {
+      } else if (seg[1] === "2") {
         import("./about-2.js");
       } else {
         import("./about-fallback.js");

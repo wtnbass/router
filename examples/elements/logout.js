@@ -1,4 +1,4 @@
-import { navigate } from "../node_modules/@wtnbass/slot-router/slot-router.esm.js";
+import { navigate } from "../node_modules/slot-router/slot-router.js";
 
 class Logout extends HTMLElement {
   constructor() {
