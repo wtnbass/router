@@ -1,4 +1,4 @@
-import { Router } from "../node_modules/@wtnbass/slot-router/slot-router.esm.js";
+import { Router } from "../node_modules/slot-router/slot-router.js";
 
 class AuthRouter extends Router {
   redirect(path) {

@@ -1,10 +1,8 @@
-# Node
+# js
 node_modules
-
-# Cache
-.rpt2_cache
 .tern-*
 
 # Build
-*.d.ts
-slot-router.*.js
+.rpt2_cache
+/lib
+slot-router.*

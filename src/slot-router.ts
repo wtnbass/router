@@ -1,4 +1,4 @@
-import { resolve } from "./path";
+import { match } from "./lib/match";
 
 export const navigate = (path: string, push = true) => {
   if (push) {
@@ -43,7 +43,7 @@ export class Router extends HTMLElement {
       history.replaceState({}, "", path);
     }
 
-    const routes = resolve(
+    const routes = match(
       path,
       this,
       this.querySelectorAll("[path]"),
