@@ -7,8 +7,8 @@
     "start": "node server.js"
   },
   "dependencies": {
-    "slot-router": "file:..",
     "express": "4.16.4",
-    "pwa-helpers": "0.9.0"
+    "pwa-helpers": "0.9.0",
+    "slot-router": "0.1.1"
   }
 }
